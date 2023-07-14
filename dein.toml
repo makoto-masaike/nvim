@@ -1,0 +1,121 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'Shougo/denite.nvim'
+hook_add = '''
+  nnoremap [denite] <Nop>
+  nmap <C-d> [denite]
+  nnoremap <silent> [denite]g :<C-u>Denite grep -buffer-name=search-buffer-denite<CR>
+  nnoremap <silent> [denite]r :<C-u>Denite -resume -buffer-name=search-buffer-denite<CR>
+  nnoremap <silent> [denite]p :<C-u>Denite file_rec<CR>
+  " call denite#custom#option('default', 'prompt', '>')
+  " call denite#custom#option('_', 'highlight_matched_range', 'None')
+  " call denite#custom#option('_', 'highlight_matched_char', 'None')
+  " call denite#custom#map('insert', "<Tab>", '<denite:move_to_next_line>')
+  " call denite#custom#map('insert', "<S-Tab>", '<denite:move_to_previous_line>')
+  " call denite#custom#map('insert', "<C-t>", '<denite:do_action:tabopen>')
+  " call denite#custom#map('insert', "<C-v>", '<denite:do_action:vsplit>')
+  " call denite#custom#map('normal', "v", '<denite:do_action:vsplit>')
+  " call denite#custom#var('grep', 'command', ['pt', '--follow', '--nogroup', '--nocolor', '--hidden'])
+  " call denite#custom#var('grep', 'default_opts', [])
+  " call denite#custom#var('grep', 'recursive_opts', [])
+  " call denite#custom#var('file_rec', 'command', ['pt', '--follow', '--nocolor', '--nogroup', '--hidden', '-g', ''])
+'''
+
+[[plugins]]
+repo = 'osyo-manga/vim-anzu'
+hook_add = '''
+  nmap n <Plug>(anzu-n-with-echo)
+  nmap N <Plug>(anzu-N-with-echo)
+  nmap * <Plug>(anzu-star)
+  nmap # <Plug>(anzu-sharp)
+'''
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+source = 'release'
+build = 'coc#util#install()'
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+
+[[plugins]]
+repo = 'Townk/vim-autoclose'
+
+[[plugins]]
+repo = 'wadackel/vim-dogrun'
+
+[[plugins]]
+repo = 'joshdick/onedark.vim'
+hook_add = '''
+  colorscheme onedark
+'''
+
+# [[plugins]]
+# repo = 'w0rp/ale'
+
+[[plugins]]
+repo = 'dense-analysis/ale'
+
+# [[plugins]]
+# repo = 'szw/vim-tags'
+
+# [[plugins]]
+# repo = 'soramugi/auto-ctags.vim'
+
+# [[plugins]]
+# repo = 'Quramy/tsuquyomi'
+
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'slim-template/vim-slim'
+
+[[plugins]]
+repo = 'tpope/vim-rails'
+
+[[plugins]]
+repo = 'vim-ruby/vim-ruby'
+
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'posva/vim-vue'
+
+[[plugins]]
+repo = 'digitaltoad/vim-pug'
+on_ft = ['pug', 'vue']
+
+[[plugins]]
+repo = 'alvan/vim-closetag'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'junegunn/fzf'
+build_on = '''
+./install -all
+'''
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
